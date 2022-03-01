@@ -1,4 +1,6 @@
 function send() {
-    var name = document.getElementsByClassName("name")
-    var text = document.getElementsByClassName("text")
+    var name = document.getElementById("name")
+    var text = document.getElementById("text")
+
+    console.log(name.value + "  " + text.innerHTML)
 }
