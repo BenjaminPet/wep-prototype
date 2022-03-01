@@ -13,8 +13,29 @@
 
     <input type="text" id="name">
 
-    <button onClick="send()">send</button>
+    <button onClick="send();">send</button>
 
-    <script src="/app.js"></script>
+
+    <h1 id="random"></h1>
+
+    <h2>takk til alle som har besøkt nettstedet</h2>
+
+    <h3>av Benjamin</h3>
+
+    <script>
+    function send() {
+        var name = document.getElementById("name")
+        var text = document.getElementById("text")
+
+        console.log(name.value + "  " + text.innerHTML)
+
+        text.innerHTML = "Velkommen, vi ønsker deg alt som er godt, " + name.value + "!";
+    }   
+
+        document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
+    setInterval(function() {
+        document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
+    }, 60 * 1000);
+    </script>
 </body>
 </html>
