@@ -9,6 +9,11 @@ function send() {
 
 // set random number
 
+        document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
+    setInterval(function() {
+        document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
+        console.log(document.getElementById("random"))
+    }, 60 * 1000);
 
 function random() {
     var num = document.getElementById("num")
@@ -17,7 +22,7 @@ function random() {
     if (num.value === random.innerHTML) {
         document.body.style.backgroundColor = "green";
     } else {
-
+        document.body.style.backgroundColor = "wight";
     }
 
 
