@@ -1,12 +1,13 @@
+// send 
 function send() {
-    var name = document.getElementById("name")
-    var text = document.getElementById("text")
+    localStorage.setItem("navn", document.getElementById("name"))
+    localStorage.setItem("text", document.getElementById("text"))
 
-    console.log(name.value + "  " + text.innerHTML)
+    console.log(localStorage.getItem("name") + "  " + localStorage.getItem("text"))
 
-    text.innerHTML = "Velkommen, vi ønsker deg alt som er godt, " + name.value + "!";
+    text.innerHTML = "Velkommen, vi ønsker deg alt som er godt, " + localStorage.getItem("name") + "!";
 }   
-
+// set random number
         document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
     setInterval(function() {
         document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
