@@ -1,0 +1,33 @@
+h1 {
+
+}
+
+.navbar {
+    background-color: black;
+    margin: 0%;
+    padding: 1%;
+}
+
+.nav_title {
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: larger;
+    font-family: ;
+    margin: 0%;
+    padding: 1%;
+}
+
+.nav_button {
+    margin: 5px;
+    padding: 15px;
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+
+}
+.nav_button:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 50px darkgray;
+    
+}
