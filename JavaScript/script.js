@@ -1,6 +1,6 @@
 
 
-// send 
+// send navn til velkommen
 function send() {
     localStorage.setItem("name", document.getElementById('name').value)
 
@@ -9,7 +9,7 @@ function send() {
     document.getElementById("text").innerHTML = "Velkommen, vi ønsker deg alt som er godt, " + localStorage.getItem("name") + "!";
 } 
 
-
+// random spill 
 function random() {
     var num = document.getElementById("num")
     var random = document.getElementById("random")
@@ -24,6 +24,7 @@ function random() {
 
 }
 
+// få random color til ramdom game
 function randomcolor() {
     var n = Math.floor(Math.random() * 10)
 
