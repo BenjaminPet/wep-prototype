@@ -1,4 +1,13 @@
 
+    var randomnum = Math.floor(Math.random() * 10)
+    
+    // set random number vært minut
+
+    document.getElementById("random").innerHTML = "Ditt lykketall dette minuttet " + randomnum
+    setInterval(function() {
+        document.getElementById("random").innerHTML = "Ditt lykketall dette minuttet " + randomnum
+        console.log(random)
+    }, 60 * 1000);
 
 // send navn til velkommen
 function send() {
@@ -12,9 +21,10 @@ function send() {
 // random spill 
 function random() {
     var num = document.getElementById("num")
-    var random = document.getElementById("random")
 
-    if (num.value === random.innerHTML) {
+    console.log(randomnum)
+
+    if (num.value === randomnum) {
         document.body.style.backgroundColor = randomcolor();
         document.getElementById("random").innerHTML = Math.floor(Math.random() * 10)
     } else {
